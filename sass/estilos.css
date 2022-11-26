@@ -1,10 +1,13 @@
-
-/* CSS Reset */
-
-
+/* VARIABLES */ /* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
@@ -13,7 +16,7 @@ body {
 }
 
 a {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -44,6 +47,50 @@ html {
   scroll-behavior: smooth;
 }
 
+/* CSS Reset */
+/*
+
+img {
+    object-fit: cover;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:link {
+    color: #8f7aa8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #8f7aa8;
+}
+
+a:focus {
+    color: #36a5a0;
+}
+
+a:active {
+    color: #36a5a0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+} */
 /* General */
 .box {
   box-shadow: 8px 9px 5px 0px rgba(0, 0, 0, 0.5);
@@ -65,25 +112,35 @@ html {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 150px;
+  height: 200px;
   justify-content: center;
-  animation: float 2s infinite ease;
+  -webkit-animation: float 2s infinite ease;
+          animation: float 2s infinite ease;
+}
+
+@-webkit-keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes float {
   0% {
     transform: translateY(0);
   }
-
   50% {
     transform: translateY(-25px);
   }
-
   100% {
     transform: translateY(0);
   }
 }
-
 .arrow img:hover {
   scale: 1.2;
   transition: 0.4s;
@@ -99,7 +156,8 @@ html {
 .barraHeader {
   background-color: #36a5a0;
   width: 30%;
-  height: 2vh;  
+  height: 2vh;
+  margin-right: 0.3%;
   border-bottom-right-radius: 40px;
   display: flex;
 }
@@ -107,7 +165,8 @@ html {
 .logo {
   width: auto;
   height: 15vh;
-  display: flex;  
+  display: flex;
+  margin-left: 7%;
   margin-bottom: 2%;
   margin-top: 1%;
 }
@@ -115,7 +174,7 @@ html {
 .logo img:hover {
   cursor: pointer;
   transform: scale(1.2);
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .headerInfo {
@@ -123,7 +182,7 @@ html {
   width: 100%;
   color: white;
   background-color: #8f7aa8;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -149,30 +208,31 @@ i {
   margin-right: 5%;
 }
 
-/* .navbar {
-    background-color: #ffffff;
-    display: flex;
-    width: 100vh;
-    justify-content: center;
-} */
+.navbar {
+  background-color: #ffffff;
+  display: flex;
+  width: 100vh;
+  justify-content: center;
+}
+
 .navbar__item {
-  display: flex;  
+  display: flex;
+  width: 17vh;
   height: 8vh;
   text-align: center;
   border-left: 2px solid #36a5a0;
   font-size: 1.5rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bold;
   align-items: center;
   justify-content: center;
   color: #6b4a91;
-  padding: 15px;
 }
 
 .navbar__item :hover {
   color: #36a5a0;
-  transition: color .6s;
-  transition: all .3s;
+  transition: color 0.6s;
+  transition: all 0.3s;
   transform: translateY(-10px) scale(1.1);
   opacity: 0.5;
 }
@@ -198,7 +258,7 @@ i {
 
 .footer a:hover {
   transform: scale(1.5);
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 /*INDEX CONTENIDO PRINCIPAL*/
@@ -216,10 +276,44 @@ i {
   align-items: center;
   text-align: center;
   font-size: 2rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: white;
   font-weight: bold;
   text-shadow: 0 0 30px black;
+}
+
+.textoAyudamos {
+  color: white;
+  background-color: rgba(143, 122, 168, 0.5254901961);
+  border-radius: 10px;
+  padding: 1%;
+  display: flex;
+  justify-content: space-around;
+  width: 30vh;
+  height: 20vh;
+  text-align: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 1vh;
+}
+
+.textoEmpresa {
+  color: #ffffff;
+  background-color: rgba(54, 165, 159, 0.5254901961);
+  border-radius: 10px;
+  padding: 1%;
+  display: flex;
+  width: 100vh;
+  height: 20vh;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin: 1vh;
 }
 
 .index__text_container {
@@ -229,56 +323,19 @@ i {
   margin-top: 10vh;
 }
 
-.textoAyudamos {
-  color: white;
-  background-color: #8f7aa886;
-  border-radius: 10px;
-  padding: 1%;
-  display: flex;
-  justify-content: center;
-  width: 30vh;
-  height: 22vh;
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  margin: 1vh;
-}
-
-.textoEmpresa {
-  color: #ffffff;
-  background-color: #36a59f86;
-  border-radius: 10px;
-  padding: 1%;
-  display: flex;
-  width: 100vh;
-  height: 22vh;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  margin: 1vh;
-}
-
 .soportePersonalizado {
-  color: #00000075;
-  background-color: white;
+  color: rgba(0, 0, 0, 0.4588235294);
+  background-color: rgb(255, 255, 255);
   width: 30vh;
   height: 45vh;
   padding: 1%;
   border: rgba(0, 0, 0, 0.396) 4px solid;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-top: 8vh;
-  box-shadow: 0 0 20px #797979;
+  box-shadow: 0 0 20px rgb(121, 121, 121);
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.soportePersonalizado h2 {
-  font-size: 1.8rem;
 }
 
 .soportePersonalizado p {
@@ -287,7 +344,7 @@ i {
 
 .soportePersonalizado img:hover {
   transform: scale(1.15);
-  transition: all .3s;
+  transition: all 0.3s;
   filter: opacity(0.3);
 }
 
@@ -316,22 +373,71 @@ i {
   align-items: center;
   text-align: center;
   font-size: 2rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: white;
   font-weight: bold;
   text-shadow: 0 0 30px black;
   margin-bottom: 2%;
 }
 
+.service__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20vh 13%;
+  flex-wrap: wrap;
+}
+
+.service__item_left {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 10vh;
+  flex-wrap: wrap;
+}
+
+.service__item_left:last-of-type {
+  margin: 0;
+}
+
+.service__item_right {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 10vh;
+  flex-wrap: wrap;
+}
+
+.service__item_left__info,
+.service__item_right__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.service__item_left__info {
+  margin-right: 7%;
+  width: 80vh;
+}
+
+.service__item_right__info {
+  margin-left: 7%;
+  width: 80vh;
+}
+
 .tituloServicios {
   font-size: 2.5rem;
-  text-decoration: underline 4px solid #36a5a0;
-  color: #000000bb;
+  -webkit-text-decoration: underline 4px solid #36a5a0;
+          text-decoration: underline 4px solid #36a5a0;
+  color: rgba(0, 0, 0, 0.7333333333);
 }
 
 .subtituloServicios {
   font-size: 1.8rem;
-  color: #3434349e;
+  color: rgba(52, 52, 52, 0.6196078431);
 }
 
 .textoServiciosIzq {
@@ -354,7 +460,6 @@ i {
 .imagenServicios img {
   width: 35vh;
   height: 52vh;
-  object-fit: cover;
 }
 
 .imagenServicios img:hover {
@@ -365,12 +470,16 @@ i {
 
 .imagenServiciosIzq {
   padding-left: 7vh;
-  border-left: #3131315b 4px solid;
+  border-left: rgba(49, 49, 49, 0.3568627451) 4px solid;
 }
 
 .imagenServiciosDer {
   padding-right: 7vh;
-  border-right: #3131315b 4px solid;
+  border-right: rgba(49, 49, 49, 0.3568627451) 4px solid;
+}
+
+.service__item_right:last-of-type {
+  margin: 0;
 }
 
 .botonCotizarContenedor {
@@ -384,6 +493,8 @@ i {
 }
 
 .botonCotizar {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   border-radius: 10px;
@@ -396,7 +507,7 @@ i {
   color: #36a5a0;
   border-color: #6b4a91;
   background-color: #6b4a91;
-  transition: all .4s;
+  transition: all 0.4s;
   transform: scale(1.1);
 }
 
@@ -415,7 +526,7 @@ i {
   align-items: center;
   text-align: center;
   font-size: 2rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: white;
   font-weight: bold;
   text-shadow: 0 0 30px black;
@@ -423,12 +534,11 @@ i {
 }
 
 .textoQuienesSomos {
-  display: flex;
-  flex-direction: column;  
+  display: block;
   width: 70%;
   margin: 0 auto;
   background-color: #ffffff;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   margin-top: 24vh;
   font-size: 1.2rem;
@@ -436,12 +546,12 @@ i {
 
 .textoQuienesSomos h2 {
   font-size: 4rem;
-  margin: 0 auto;
   color: #6b4a91;
   display: block;
-  width: 60%; 
+  width: 60%;
+  margin: 0 auto;
   background-color: #ffffff;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
@@ -458,13 +568,12 @@ i {
   display: flex;
   width: 25vh;
   height: 40vh;
-  filter: grayscale(100%); 
-  object-fit: cover; 
+  filter: grayscale(100%);
 }
 
 .imgNosotros:hover {
   transform: scale(1.2);
-  transition: all .3s;
+  transition: all 0.3s;
   filter: grayscale(0);
 }
 
@@ -483,7 +592,7 @@ i {
   align-items: center;
   text-align: center;
   font-size: 2rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: white;
   font-weight: bold;
   text-shadow: 0 0 30px black;
@@ -492,7 +601,7 @@ i {
 
 .tituloLinks {
   font-size: 3rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: white;
   display: block;
   text-align: center;
@@ -502,10 +611,14 @@ i {
 
 .contenedorLinks {
   font-size: 1.5rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   display: flex;
   flex-direction: row;
@@ -542,7 +655,7 @@ i {
   align-items: center;
   text-align: center;
   font-size: 2rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: white;
   font-weight: bold;
   text-shadow: 0 0 30px black;
@@ -553,11 +666,13 @@ i {
   width: 70%;
   outline: none;
   background-color: #6b4a91;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   margin: 0 auto;
   color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  padding: 1%;  
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 1%;
 }
 
 .contact__input_text {
@@ -572,13 +687,13 @@ i {
 .contact__container {
   display: flex;
   box-shadow: 0 0 30px black;
-  margin: 50px 20px;  
+  margin: 50px 20px;
 }
 
 .contact__info {
   background-color: #36a5a0;
   width: 30%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: white;
   font-weight: bold;
   font-size: 1.2rem;
@@ -590,7 +705,7 @@ i {
 
 .contact__info a:hover {
   color: #6b4a91;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .contact__info ul {
@@ -634,7 +749,7 @@ i {
 
 .contact__input {
   width: 60%;
-  background-color: #6b4a9100;
+  background-color: rgba(107, 74, 145, 0);
   border-bottom: 2px solid white;
   display: block;
   outline: none;
@@ -666,55 +781,37 @@ i {
 
 @media screen and (max-width: 1399px) {
   .headerInfo {
-    font-size: .55rem;
+    font-size: 0.55rem;
   }
-
   .textoQuienesSomos h2 {
     font-size: 2.5rem;
   }
-
   .logo {
     height: 95px;
   }
-
   .textoAyudamos {
     font-size: 1rem;
   }
-
   .textoEmpresa {
     font-size: 1rem;
   }
-
   .video {
     width: 60%;
   }
-
   iframe {
     width: 300px;
     height: 400px;
   }
-
   h1 {
     font-size: 3rem;
   }
-
   .imagenServiciosIzq {
     border: none;
   }
-
   .imagenServiciosDer {
     border: none;
   }
-
-  .textoQuienesSomos h2 {
-    font-size: 1.5rem;    
-  }
-
-  .textoQuienesSomos p {
-    font-size: 0.9rem;
-  }
 }
-
 /*  --BOOSTRAP CONFIGS--  */
 .violeta {
   color: #6b4a91;
@@ -730,3 +827,8 @@ i {
 .bgVioleta {
   background-color: #8f7aa8;
 }
+
+.imagenServ {
+  width: 35vh;
+  height: 52vh;
+}/*# sourceMappingURL=estilos.css.map */
