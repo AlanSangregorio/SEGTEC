@@ -1,12 +1,4 @@
-
-
-/* VARIABLES */ /* RESETS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* CSS Reset */
 img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -18,7 +10,7 @@ body {
 }
 
 a {
-  color: rgb(0, 0, 0);
+  color: black;
   text-decoration: none;
 }
 
@@ -49,50 +41,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* CSS Reset */
-
-
-img {
-    object-fit: cover;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-}
-
-
-a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-
-a:link {
-    color: #8f7aa8;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #8f7aa8;
-}
-
-a:focus {
-    color: #36a5a0;
-}
-
-a:active {
-    color: #36a5a0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-html {
-    scroll-behavior: smooth;
-}
 /* General */
 .box {
   box-shadow: 8px 9px 5px 0px rgba(0, 0, 0, 0.5);
@@ -114,7 +62,7 @@ html {
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 200px;
+  height: 150px;
   justify-content: center;
   -webkit-animation: float 2s infinite ease;
           animation: float 2s infinite ease;
@@ -159,7 +107,6 @@ html {
   background-color: #36a5a0;
   width: 30%;
   height: 2vh;
-  margin-right: 0.3%;
   border-bottom-right-radius: 40px;
   display: flex;
 }
@@ -168,7 +115,6 @@ html {
   width: auto;
   height: 15vh;
   display: flex;
-  margin-left: 7%;
   margin-bottom: 2%;
   margin-top: 1%;
 }
@@ -210,16 +156,14 @@ i {
   margin-right: 5%;
 }
 
-.navbar {
-  background-color: #ffffff;
-  display: flex;
-  width: 100vh;
-  justify-content: center;
-}
-
+/* .navbar {
+    background-color: #ffffff;
+    display: flex;
+    width: 100vh;
+    justify-content: center;
+} */
 .navbar__item {
   display: flex;
-  width: 17vh;
   height: 8vh;
   text-align: center;
   border-left: 2px solid #36a5a0;
@@ -229,6 +173,7 @@ i {
   align-items: center;
   justify-content: center;
   color: #6b4a91;
+  padding: 15px;
 }
 
 .navbar__item :hover {
@@ -284,20 +229,26 @@ i {
   text-shadow: 0 0 30px black;
 }
 
+.index__text_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10vh;
+}
+
 .textoAyudamos {
   color: white;
   background-color: rgba(143, 122, 168, 0.5254901961);
   border-radius: 10px;
   padding: 1%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 30vh;
-  height: 20vh;
+  height: 22vh;
   text-align: center;
-  align-items: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 1vh;
 }
 
@@ -308,26 +259,19 @@ i {
   padding: 1%;
   display: flex;
   width: 100vh;
-  height: 20vh;
+  height: 22vh;
   align-items: center;
   justify-content: space-around;
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 1vh;
-}
-
-.index__text_container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 10vh;
 }
 
 .soportePersonalizado {
   color: rgba(0, 0, 0, 0.4588235294);
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   width: 30vh;
   height: 45vh;
   padding: 1%;
@@ -335,9 +279,13 @@ i {
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-top: 8vh;
-  box-shadow: 0 0 20px rgb(121, 121, 121);
+  box-shadow: 0 0 20px #797979;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.soportePersonalizado h2 {
+  font-size: 1.8rem;
 }
 
 .soportePersonalizado p {
@@ -382,54 +330,6 @@ i {
   margin-bottom: 2%;
 }
 
-.service__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 20vh 13%;
-  flex-wrap: wrap;
-}
-
-.service__item_left {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin-bottom: 10vh;
-  flex-wrap: wrap;
-}
-
-.service__item_left:last-of-type {
-  margin: 0;
-}
-
-.service__item_right {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin-bottom: 10vh;
-  flex-wrap: wrap;
-}
-
-.service__item_left__info,
-.service__item_right__info {
-  display: flex;
-  flex-direction: column;
-}
-
-.service__item_left__info {
-  margin-right: 7%;
-  width: 80vh;
-}
-
-.service__item_right__info {
-  margin-left: 7%;
-  width: 80vh;
-}
-
 .tituloServicios {
   font-size: 2.5rem;
   -webkit-text-decoration: underline 4px solid #36a5a0;
@@ -462,6 +362,8 @@ i {
 .imagenServicios img {
   width: 35vh;
   height: 52vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .imagenServicios img:hover {
@@ -478,10 +380,6 @@ i {
 .imagenServiciosDer {
   padding-right: 7vh;
   border-right: rgba(49, 49, 49, 0.3568627451) 4px solid;
-}
-
-.service__item_right:last-of-type {
-  margin: 0;
 }
 
 .botonCotizarContenedor {
@@ -536,7 +434,8 @@ i {
 }
 
 .textoQuienesSomos {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 70%;
   margin: 0 auto;
   background-color: #ffffff;
@@ -548,10 +447,10 @@ i {
 
 .textoQuienesSomos h2 {
   font-size: 4rem;
+  margin: 0 auto;
   color: #6b4a91;
   display: block;
   width: 60%;
-  margin: 0 auto;
   background-color: #ffffff;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
@@ -571,6 +470,8 @@ i {
   width: 25vh;
   height: 40vh;
   filter: grayscale(100%);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .imgNosotros:hover {
@@ -813,6 +714,12 @@ i {
   .imagenServiciosDer {
     border: none;
   }
+  .textoQuienesSomos h2 {
+    font-size: 1.5rem;
+  }
+  .textoQuienesSomos p {
+    font-size: 0.9rem;
+  }
 }
 /*  --BOOSTRAP CONFIGS--  */
 .violeta {
@@ -828,9 +735,4 @@ i {
 
 .bgVioleta {
   background-color: #8f7aa8;
-}
-
-.imagenServ {
-  width: 35vh;
-  height: 52vh;
 }/*# sourceMappingURL=estilos.css.map */
