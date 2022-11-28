@@ -149,12 +149,6 @@ i {
   margin-right: 5%;
 }
 
-/* .navbar {
-    background-color: #ffffff;
-    display: flex;
-    width: 100vh;
-    justify-content: center;
-} */
 .navbar__item {
   display: flex;  
   height: 8vh;
