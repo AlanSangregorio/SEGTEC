@@ -1,3 +1,5 @@
+
+
 /* VARIABLES */ /* RESETS */
 * {
   margin: 0;
@@ -48,7 +50,7 @@ html {
 }
 
 /* CSS Reset */
-/*
+
 
 img {
     object-fit: cover;
@@ -90,7 +92,7 @@ ul {
 
 html {
     scroll-behavior: smooth;
-} */
+}
 /* General */
 .box {
   box-shadow: 8px 9px 5px 0px rgba(0, 0, 0, 0.5);
