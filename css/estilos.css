@@ -1,4 +1,4 @@
-/* CSS Reset */
+/* VARIABLES */
 img {
   object-fit: cover; }
 
@@ -191,7 +191,7 @@ i {
 
 .textoAyudamos {
   color: white;
-  background-color: #8f7aa886;
+  background-color: #8f7aa8;
   border-radius: 10px;
   padding: 1%;
   display: flex;
