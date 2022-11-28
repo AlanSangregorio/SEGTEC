@@ -577,7 +577,7 @@ i {
   transform: scale(1.05);
   transition: all 0.3s; }
 
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 760px) {
   .headerInfo {
     font-size: .55rem; }
   .textoQuienesSomos h2 {
@@ -602,7 +602,14 @@ i {
   .textoQuienesSomos h2 {
     font-size: 1.5rem; }
   .textoQuienesSomos p {
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+  .soportePersonalizado p {
+    display: none;
+    color: #6b4a91; }
+  .soportePersonalizado {
+    border: none;
+    box-shadow: none;
+    width: 100%; } }
 
 /*  --BOOSTRAP CONFIGS--  */
 .violeta {
