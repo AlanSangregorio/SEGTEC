@@ -714,14 +714,31 @@ i {
 
   .soportePersonalizado p {
     display: none;
-    color: #6b4a91;
+    color: #6b4a91;    
   }
   
   .soportePersonalizado {
     border: none;
     box-shadow: none;
-    width: 100%;
+    width: 100%;       
+    height: 255px;
   }
+
+  .soportePersonalizado img {
+    padding: 15px;    
+  }
+
+  .soportePersonalizado h2 {
+    font-size: 1.5rem;
+  }
+  .dis-none {
+    display: none;  
+  }
+  .imagenServiciosIzq .imagenServiciosDer {
+    margin: 0 auto;
+    width: 200px;
+    padding:0%;
+  }   
 }
 
 /*  --BOOSTRAP CONFIGS--  */
@@ -739,3 +756,4 @@ i {
 .bgVioleta {
   background-color: $violeta;
 }
+
