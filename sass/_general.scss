@@ -1,0 +1,61 @@
+.box {
+    box-shadow: 8px 9px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .iconoWppFijo {
+    position: fixed;
+    bottom: 13%;
+    right: 20px;
+  }
+  
+  .iconoWppFijo:hover {
+    transform: scale(1.3);
+    transition: all 0.5s;
+    rotate: 360deg;
+  }
+  
+  .arrow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    animation: float 2s infinite ease;
+  }
+  
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-25px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .arrow img:hover {
+    scale: 1.2;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  /*  --BOOSTRAP CONFIGS--  */
+.violeta {
+    color: #6b4a91;
+  }
+  
+  .botonHamburguesa {
+    border: 2px solid #6b4a91;
+    border-radius: 5px;
+    width: 55px;
+    height: 45px;
+  }
+  
+  .bgVioleta {
+    background-color: $violeta;
+  }

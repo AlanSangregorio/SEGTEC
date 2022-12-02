@@ -1,0 +1,82 @@
+@media screen and (max-width: 760px) {
+    .headerInfo {
+      font-size: .55rem;
+    }
+  
+    .textoQuienesSomos h2 {
+      font-size: 2.5rem;
+    }
+  
+    .logo {
+      height: 95px;
+    }
+  
+    .textoAyudamos {
+      font-size: 1rem;
+    }
+  
+    .textoEmpresa {
+      font-size: 1rem;
+    }
+  
+    .video {
+      width: 60%;
+    }
+  
+    iframe {
+      width: 300px;
+      height: 400px;
+    }
+  
+    h1 {
+      font-size: 3rem;
+    }
+  
+    .imagenServiciosIzq {
+      border: none;
+    }
+  
+    .imagenServiciosDer {
+      border: none;
+    }
+  
+    .textoQuienesSomos h2 {
+      font-size: 1.5rem;
+    }
+  
+    .textoQuienesSomos p {
+      font-size: 0.9rem;
+    }
+  
+    .soportePersonalizado p {
+      display: none;
+      color: #6b4a91;    
+    }
+    
+    .soportePersonalizado {
+      border: none;
+      box-shadow: none;
+      width: 100%;       
+      height: 255px;
+    }
+  
+    .soportePersonalizado img {
+      padding: 15px;    
+    }
+  
+    .soportePersonalizado h2 {
+      font-size: 1.5rem;
+    }
+    .dis-none {
+      display: none;  
+    }
+    .imagenServiciosIzq .imagenServiciosDer {
+      margin: 0 auto;
+      width: 200px;
+      padding:0%;
+    }   
+  }
+  
+  
+  
+  

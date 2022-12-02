@@ -1,4 +1,10 @@
 /* VARIABLES */
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 img {
   object-fit: cover; }
 
@@ -31,7 +37,39 @@ ul {
 html {
   scroll-behavior: smooth; }
 
-/* General */
+/* CSS Reset */
+img {
+  object-fit: cover; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+a:link {
+  color: #8f7aa8;
+  font-weight: bold;
+  text-decoration: none; }
+
+a:visited {
+  color: #8f7aa8; }
+
+a:focus {
+  color: #36a5a0; }
+
+a:active {
+  color: #36a5a0; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
 .box {
   box-shadow: 8px 9px 5px 0px rgba(0, 0, 0, 0.5); }
 
@@ -66,16 +104,43 @@ html {
   transition: 0.4s;
   cursor: pointer; }
 
+/*  --BOOSTRAP CONFIGS--  */
+.violeta {
+  color: #6b4a91; }
+
+.botonHamburguesa {
+  border: 2px solid #6b4a91;
+  border-radius: 5px;
+  width: 55px;
+  height: 45px; }
+
+.bgVioleta {
+  background-color: #8f7aa8; }
+
 /* Header */
 .headerTop {
   display: flex; }
-
-.barraHeader {
-  background-color: #36a5a0;
-  width: 30%;
-  height: 2vh;
-  border-bottom-right-radius: 40px;
-  display: flex; }
+  .headerTop .barraHeader {
+    background-color: #36a5a0;
+    width: 30%;
+    height: 2vh;
+    border-bottom-right-radius: 40px;
+    display: flex; }
+  .headerTop .headerInfo {
+    font-size: 1.1rem;
+    width: 100%;
+    color: white;
+    background-color: #8f7aa8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom-left-radius: 50px;
+    margin-left: 2px;
+    padding-right: 15px;
+    height: 5vh;
+    gap: 4%;
+    flex-wrap: wrap; }
 
 .logo {
   width: auto;
@@ -89,39 +154,13 @@ html {
   transform: scale(1.2);
   transition: all .3s; }
 
-.headerInfo {
-  font-size: 1.1rem;
-  width: 100%;
-  color: white;
-  background-color: #8f7aa8;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  border-bottom-left-radius: 50px;
-  margin-left: 2px;
-  padding-right: 15px;
-  height: 5vh;
-  gap: 4%;
-  flex-wrap: wrap; }
-
 i {
   vertical-align: middle;
   padding: 5px; }
 
-.headerBottom {
-  justify-content: space-between;
-  align-items: center; }
-
 .contenedorNav {
   margin-right: 5%; }
 
-/* .navbar {
-      background-color: #ffffff;
-      display: flex;
-      width: 100vh;
-      justify-content: center;
-  } */
 .navbar__item {
   display: flex;
   height: 8vh;
@@ -145,7 +184,6 @@ i {
 .navbar__item:first-of-type {
   border: none; }
 
-/* Footer */
 .footer {
   color: white;
   background-color: #8f7aa8;
@@ -163,7 +201,6 @@ i {
   transform: scale(1.5);
   transition: all .3s; }
 
-/*INDEX CONTENIDO PRINCIPAL*/
 .textoPrincipal {
   background-image: url(../assets/Imagenes/fondociudad.jpg);
   background-repeat: no-repeat;
@@ -401,61 +438,6 @@ i {
   transition: all .3s;
   filter: grayscale(0); }
 
-/* --SOPORTE--*/
-.textoPrincipalSoporte {
-  background-image: url(../assets/Imagenes/soporteFondo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-  height: 55vh;
-  align-items: center;
-  text-align: center;
-  font-size: 2rem;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: white;
-  font-weight: bold;
-  text-shadow: 0 0 30px black;
-  margin-bottom: 2%; }
-
-.tituloLinks {
-  font-size: 3rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: white;
-  display: block;
-  text-align: center;
-  margin-top: 7vh;
-  background-color: #36a5a0; }
-
-.contenedorLinks {
-  font-size: 1.5rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: center;
-  color: white;
-  width: fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  margin-top: 15vh;
-  margin-bottom: 15vh;
-  gap: 5%; }
-
-.video {
-  justify-content: space-around;
-  border: 1px solid black;
-  border-radius: 25px;
-  padding: 1%;
-  background-color: #6b4a91;
-  width: 70vh;
-  margin-top: 5vh; }
-
 /* ---Contacto--- */
 .textoPrincipalContacto {
   background-image: url(../assets/Imagenes/fondoContacto.jpg);
@@ -577,6 +559,61 @@ i {
   transform: scale(1.05);
   transition: all 0.3s; }
 
+/* --SOPORTE--*/
+.textoPrincipalSoporte {
+  background-image: url(../assets/Imagenes/soporteFondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 55vh;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 30px black;
+  margin-bottom: 2%; }
+
+.tituloLinks {
+  font-size: 3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  display: block;
+  text-align: center;
+  margin-top: 7vh;
+  background-color: #36a5a0; }
+
+.contenedorLinks {
+  font-size: 1.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: white;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  gap: 5%; }
+
+.video {
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 1%;
+  background-color: #6b4a91;
+  width: 70vh;
+  margin-top: 5vh; }
+
 @media screen and (max-width: 760px) {
   .headerInfo {
     font-size: .55rem; }
@@ -621,16 +658,3 @@ i {
     margin: 0 auto;
     width: 200px;
     padding: 0%; } }
-
-/*  --BOOSTRAP CONFIGS--  */
-.violeta {
-  color: #6b4a91; }
-
-.botonHamburguesa {
-  border: 2px solid #6b4a91;
-  border-radius: 5px;
-  width: 55px;
-  height: 45px; }
-
-.bgVioleta {
-  background-color: #8f7aa8; }
