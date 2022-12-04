@@ -5,7 +5,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    display: flex;
+    display: $flex;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
@@ -14,7 +14,7 @@
     text-align: center;
     font-size: 2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
+    color: $blanco;
     font-weight: bold;
     text-shadow: 0 0 30px black;
     margin-bottom: 2%;
@@ -44,7 +44,7 @@
   }
   
   .imagenServicios {
-    display: flex;
+    display: $flex;
     width: 35vh;
   }
   
@@ -71,7 +71,7 @@
   }
   
   .botonCotizarContenedor {
-    display: flex;
+    display: $flex;
     justify-content: flex-end;
     width: 100%;
   }

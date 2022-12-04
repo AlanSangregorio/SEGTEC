@@ -225,51 +225,57 @@ i {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 10vh; }
+  .index__text_container .textoAyudamos {
+    color: white;
+    background-color: #8f7aa8;
+    border-radius: 10px;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    width: 30vh;
+    height: 22vh;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1vh; }
+  .index__text_container .textoEmpresa {
+    color: #ffffff;
+    background-color: #36a59f86;
+    border-radius: 10px;
+    padding: 1%;
+    display: flex;
+    width: 100vh;
+    height: 22vh;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1vh; }
 
-.textoAyudamos {
-  color: white;
-  background-color: #8f7aa8;
-  border-radius: 10px;
-  padding: 1%;
+.contenedorInfoGeneral {
+  margin-top: 10vh;
   display: flex;
-  justify-content: center;
-  width: 30vh;
-  height: 22vh;
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  margin: 1vh; }
-
-.textoEmpresa {
-  color: #ffffff;
-  background-color: #36a59f86;
-  border-radius: 10px;
-  padding: 1%;
-  display: flex;
-  width: 100vh;
-  height: 22vh;
-  align-items: center;
   justify-content: space-around;
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  margin: 1vh; }
-
-.soportePersonalizado {
-  color: #00000075;
-  background-color: white;
-  width: 30vh;
-  height: 45vh;
-  padding: 1%;
-  border: rgba(0, 0, 0, 0.396) 4px solid;
-  text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin-top: 8vh;
-  box-shadow: 0 0 20px #797979;
-  overflow: hidden;
-  text-overflow: ellipsis; }
+  width: 70%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  margin-bottom: 100px; }
+  .contenedorInfoGeneral .soportePersonalizado {
+    color: #00000075;
+    background-color: white;
+    width: 30vh;
+    height: 45vh;
+    padding: 1%;
+    border: rgba(0, 0, 0, 0.396) 4px solid;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 8vh;
+    box-shadow: 0 0 20px #797979;
+    overflow: hidden;
+    text-overflow: ellipsis; }
 
 .soportePersonalizado h2 {
   font-size: 1.8rem; }
@@ -281,15 +287,6 @@ i {
   transform: scale(1.15);
   transition: all .3s;
   filter: opacity(0.3); }
-
-.contenedorInfoGeneral {
-  margin-top: 10vh;
-  display: flex;
-  justify-content: space-around;
-  width: 70%;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  margin-bottom: 100px; }
 
 /*SERVICIOS */
 .textoPrincipalServicios {

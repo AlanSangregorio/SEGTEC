@@ -21,21 +21,21 @@ a {
 }
 
 a:link {
-    color: #8f7aa8;
+    color: $violeta;
     font-weight: bold;
     text-decoration: none;
 }
 
 a:visited {
-    color: #8f7aa8;
+    color: $violeta;
 }
 
 a:focus {
-    color: #36a5a0;
+    color: $verde;
 }
 
 a:active {
-    color: #36a5a0;
+    color: $verde;
 }
 
 ul {
@@ -66,21 +66,21 @@ img {
   }
   
   a:link {
-    color: #8f7aa8;
+    color: $violeta;
     font-weight: bold;
     text-decoration: none;
   }
   
   a:visited {
-    color: #8f7aa8;
+    color: $violeta;
   }
   
   a:focus {
-    color: #36a5a0;
+    color: $verde;
   }
   
   a:active {
-    color: #36a5a0;
+    color: $verde;
   }
   
   ul {

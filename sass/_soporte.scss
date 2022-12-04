@@ -14,7 +14,7 @@
     text-align: center;
     font-size: 2rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
+    color: $blanco;
     font-weight: bold;
     text-shadow: 0 0 30px black;
     margin-bottom: 2%;
@@ -23,7 +23,7 @@
   .tituloLinks {
     font-size: 3rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+    color: $blanco;
     display: block;
     text-align: center;
     margin-top: 7vh;
@@ -34,7 +34,7 @@
     font-size: 1.5rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    color: white;
+    color: $blanco;
     width: fit-content;
     height: fit-content;
     display: flex;
