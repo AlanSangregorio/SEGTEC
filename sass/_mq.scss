@@ -1,6 +1,10 @@
 @media screen and (max-width: 760px) {
+    h1 {
+      font-size: 1rem;
+    }
+
     .headerInfo {
-      font-size: .55rem;
+      display: none;
     }
   
     .textoQuienesSomos h2 {
@@ -34,10 +38,12 @@
   
     .imagenServiciosIzq {
       border: none;
+      padding: none;
     }
   
     .imagenServiciosDer {
       border: none;
+      padding: none;
     }
   
     .textoQuienesSomos h2 {
