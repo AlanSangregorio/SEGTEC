@@ -1,4 +1,4 @@
-@mixin  texto-principal {
+@mixin texto-principal {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -14,4 +14,8 @@
     color: $blanco;
     font-weight: bold;
     text-shadow: 0 0 30px black;
+}
+
+@mixin color-rosa (){
+    color:rosybrown
 }

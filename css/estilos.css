@@ -141,6 +141,9 @@ html {
     height: 5vh;
     gap: 4%;
     flex-wrap: wrap; }
+    @media screen and (max-width: 760px) {
+      .headerTop .headerInfo p {
+        display: none; } }
 
 .logo {
   width: auto;
@@ -148,11 +151,13 @@ html {
   display: flex;
   margin-bottom: 2%;
   margin-top: 1%; }
-
-.logo img:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-  transition: all .3s; }
+  @media screen and (max-width: 760px) {
+    .logo {
+      height: 95px; } }
+  .logo:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all .3s; }
 
 i {
   vertical-align: middle;
@@ -202,12 +207,30 @@ i {
   transition: all .3s; }
 
 .textoPrincipal {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 55vh;
+  align-items: center;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  text-shadow: 0 0 30px black;
   background-image: url(../assets/Imagenes/fondociudad.jpg); }
   .textoPrincipal h1 {
     font-size: 3.5rem;
     background-color: #00000063;
     border-radius: 25px;
     padding: 10px; }
+    @media screen and (max-width: 760px) {
+      .textoPrincipal h1 {
+        font-size: 1.5rem; } }
   .textoPrincipal ul {
     background-color: #00000063;
     border-radius: 25px; }
@@ -231,6 +254,10 @@ i {
     font-weight: bold;
     font-size: 1rem;
     margin: 1vh; }
+    @media screen and (max-width: 760px) {
+      .index__text_container .textoAyudamos {
+        font-size: .9rem;
+        height: fit-content; } }
   .index__text_container .textoEmpresa {
     color: #ffffff;
     background-color: #36a59f86;
@@ -246,6 +273,10 @@ i {
     font-weight: bold;
     font-size: 1rem;
     margin: 1vh; }
+    @media screen and (max-width: 760px) {
+      .index__text_container .textoEmpresa {
+        font-size: .9rem;
+        height: fit-content; } }
 
 .contenedorInfoGeneral {
   margin-top: 10vh;
@@ -268,6 +299,22 @@ i {
     box-shadow: 0 0 20px #797979;
     overflow: hidden;
     text-overflow: ellipsis; }
+    @media screen and (max-width: 760px) {
+      .contenedorInfoGeneral .soportePersonalizado {
+        border: none;
+        box-shadow: none;
+        width: 100%;
+        height: 255px; } }
+    @media screen and (max-width: 760px) {
+      .contenedorInfoGeneral .soportePersonalizado p {
+        display: none;
+        color: #6b4a91; } }
+    @media screen and (max-width: 760px) {
+      .contenedorInfoGeneral .soportePersonalizado img {
+        padding: 15px; } }
+    @media screen and (max-width: 760px) {
+      .contenedorInfoGeneral .soportePersonalizado h2 {
+        font-size: 1.5rem; } }
 
 .soportePersonalizado h2 {
   font-size: 1.8rem; }
@@ -302,6 +349,9 @@ i {
   margin-bottom: 2%; }
   .textoPrincipalServicios h1 {
     font-size: 5rem; }
+    @media screen and (max-width: 760px) {
+      .textoPrincipalServicios h1 {
+        font-size: 3rem; } }
 
 .tituloServicios {
   font-size: 2.5rem;
@@ -339,10 +389,18 @@ i {
 .imagenServiciosIzq {
   padding-left: 7vh;
   border-left: #3131315b 4px solid; }
+  @media screen and (max-width: 760px) {
+    .imagenServiciosIzq {
+      border: 0;
+      padding: 0; } }
 
 .imagenServiciosDer {
   padding-right: 7vh;
   border-right: #3131315b 4px solid; }
+  @media screen and (max-width: 760px) {
+    .imagenServiciosDer {
+      border: 0;
+      padding: 0; } }
 
 .botonCotizarContenedor {
   display: flex;
@@ -389,6 +447,9 @@ i {
   margin-bottom: 2%; }
   .textoPrincipalNosotros h1 {
     font-size: 5rem; }
+    @media screen and (max-width: 760px) {
+      .textoPrincipalNosotros h1 {
+        font-size: 3rem; } }
 
 .textoQuienesSomos {
   display: flex;
@@ -400,18 +461,23 @@ i {
   margin-top: 24vh;
   font-size: 1.2rem;
   margin-bottom: 150px; }
+  .textoQuienesSomos h2 {
+    font-size: 4rem;
+    margin: 0 auto;
+    color: #6b4a91;
+    display: block;
+    width: 60%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: 150px; }
+    @media screen and (max-width: 760px) {
+      .textoQuienesSomos h2 {
+        font-size: 2rem; } }
+  @media screen and (max-width: 760px) {
+    .textoQuienesSomos p {
+      font-size: .9rem; } }
 
-.textoQuienesSomos h2 {
-  font-size: 4rem;
-  margin: 0 auto;
-  color: #6b4a91;
-  display: block;
-  width: 60%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-align: center;
-  margin-bottom: 150px; }
-
-.contenedorImgNosotros {
+.textoQuienesSomos .contenedorImgNosotros {
   display: flex;
   align-items: center;
   width: 80%;
@@ -425,11 +491,10 @@ i {
   height: 40vh;
   filter: grayscale(100%);
   object-fit: cover; }
-
-.imgNosotros:hover {
-  transform: scale(1.2);
-  transition: all .3s;
-  filter: grayscale(0); }
+  .imgNosotros:hover {
+    transform: scale(1.2);
+    transition: all .3s;
+    filter: grayscale(0); }
 
 /* ---Contacto--- */
 .textoPrincipalContacto {
@@ -452,6 +517,9 @@ i {
   margin-bottom: 2%; }
   .textoPrincipalContacto h1 {
     font-size: 5rem; }
+    @media screen and (max-width: 760px) {
+      .textoPrincipalContacto h1 {
+        font-size: 3rem; } }
 
 .contenedorForm {
   width: 70%;
@@ -575,6 +643,9 @@ i {
   margin-bottom: 2%; }
   .textoPrincipalSoporte h1 {
     font-size: 5rem; }
+    @media screen and (max-width: 760px) {
+      .textoPrincipalSoporte h1 {
+        font-size: 3rem; } }
 
 .tituloLinks {
   font-size: 3rem;
@@ -584,6 +655,9 @@ i {
   text-align: center;
   margin-top: 7vh;
   background-color: #36a5a0; }
+  @media screen and (max-width: 760px) {
+    .tituloLinks {
+      font-size: 2rem; } }
 
 .contenedorLinks {
   font-size: 1.5rem;
@@ -609,52 +683,15 @@ i {
   background-color: #6b4a91;
   width: 70vh;
   margin-top: 5vh; }
+  @media screen and (max-width: 760px) {
+    .video {
+      width: 60%; } }
 
 @media screen and (max-width: 760px) {
-  h1 {
-    font-size: 1rem; }
-  .headerInfo {
-    display: none; }
-  .textoQuienesSomos h2 {
-    font-size: 2.5rem; }
-  .logo {
-    height: 95px; }
-  .textoAyudamos {
-    font-size: 1rem; }
-  .textoEmpresa {
-    font-size: 1rem; }
   .video {
     width: 60%; }
   iframe {
     width: 300px;
     height: 400px; }
-  h1 {
-    font-size: 3rem; }
-  .imagenServiciosIzq {
-    border: none;
-    padding: none; }
-  .imagenServiciosDer {
-    border: none;
-    padding: none; }
-  .textoQuienesSomos h2 {
-    font-size: 1.5rem; }
-  .textoQuienesSomos p {
-    font-size: 0.9rem; }
-  .soportePersonalizado p {
-    display: none;
-    color: #6b4a91; }
-  .soportePersonalizado {
-    border: none;
-    box-shadow: none;
-    width: 100%;
-    height: 255px; }
-  .soportePersonalizado img {
-    padding: 15px; }
-  .soportePersonalizado h2 {
-    font-size: 1.5rem; }
   .dis-none {
-    display: none; }
-  .imagenServiciosIzq .imagenServiciosDer {
-    margin: 0 auto;
-    width: 200px;
-    padding: 0%; } }
+    display: none; } }

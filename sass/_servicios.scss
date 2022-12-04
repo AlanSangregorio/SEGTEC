@@ -20,6 +20,9 @@
     margin-bottom: 2%;
     h1 {
       font-size: 5rem;
+      @media screen and (max-width: 760px) { 
+        font-size: 3rem;
+      }
     }
   }
   
@@ -66,11 +69,19 @@
   .imagenServiciosIzq {
     padding-left: 7vh;
     border-left: #3131315b 4px solid;
+    @media screen and (max-width: 760px) {
+      border: 0;
+      padding: 0;
+    }
   }
   
   .imagenServiciosDer {
     padding-right: 7vh;
     border-right: #3131315b 4px solid;
+    @media screen and (max-width: 760px) {
+      border: 0;
+      padding: 0;
+    }
   }
   
   .botonCotizarContenedor {
