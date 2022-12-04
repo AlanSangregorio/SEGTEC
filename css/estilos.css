@@ -156,15 +156,12 @@ html {
       height: 95px; } }
   .logo:hover {
     cursor: pointer;
-    transform: scale(1.2);
-    transition: all .3s; }
+    transform: scale(1.1);
+    transition: all .5s; }
 
 i {
   vertical-align: middle;
   padding: 5px; }
-
-.contenedorNav {
-  margin-right: 5%; }
 
 .navbar__item {
   display: flex;
