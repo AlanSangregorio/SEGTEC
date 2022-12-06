@@ -16,7 +16,7 @@ body {
 
 
 a {
-    color: rgb(0, 0, 0);
+    color: $violeta;
     text-decoration: none;
 }
 
@@ -24,10 +24,6 @@ a:link {
     color: $violeta;
     font-weight: bold;
     text-decoration: none;
-}
-
-a:visited {
-    color: $violeta;
 }
 
 a:focus {
@@ -70,10 +66,7 @@ img {
     font-weight: bold;
     text-decoration: none;
   }
-  
-  a:visited {
-    color: $violeta;
-  }
+   
   
   a:focus {
     color: $verde;
@@ -90,5 +83,7 @@ img {
   
   html {
     scroll-behavior: smooth;
+
   }
+
   

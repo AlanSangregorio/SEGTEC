@@ -1,23 +1,9 @@
-/*SERVICIOS */
+@import "mixin";
+
+
 .textoPrincipalServicios {
     background-image: url(../assets/Imagenes/BANNERSERVICIOS.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: $flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    height: 55vh;
-    align-items: center;
-    text-align: center;
-    font-size: 2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: $blanco;
-    font-weight: bold;
-    text-shadow: 0 0 30px black;
-    margin-bottom: 2%;
+    @include texto-principal;
     h1 {
       font-size: 5rem;
       @media screen and (max-width: 760px) { 
@@ -60,6 +46,7 @@
     object-fit: cover;
   }
   
+    
   .imagenServicios img:hover {
     transform: scale(1.1);
     transition: all 0.5s;
