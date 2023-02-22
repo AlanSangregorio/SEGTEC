@@ -11,13 +11,14 @@
     <link rel="shortcut icon" href="../assets/Imagenes/logonew.png" type="image/png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <meta name="description" content="Empresa dedicada a brindar soluciones tecnológicas para cubrir necesidades en cuanto a la seguridad del cliente, implementando distintos sistemas personalizados acorde a la situación de cada cliente, siendo cámaras de seguridad, sistema de alarmas, control de acceso, cerco electrico" >
-    <meta name="keywords" content="Instalaciones, cámaras de seguridad, alarmas, control de acceso, cerco electrico, instalaciones, service, soluciones, tecnologia">
-    <title>SEG TEC | Nosotros</title>
+    <meta name="description"
+        content="Empresa dedicada a brindar soluciones tecnológicas para cubrir necesidades en cuanto a la seguridad del cliente, implementando distintos sistemas personalizados acorde a la situación de cada cliente, siendo cámaras de seguridad, sistema de alarmas, control de acceso, cerco electrico">
+    <meta name="keywords"
+        content="Instalaciones, cámaras de seguridad, alarmas, control de acceso, cerco electrico, instalaciones, service, soluciones, tecnologia, soporte, ayuda util">
+    <title>SEG TEC | Cotización</title>
 </head>
 
-<body style="margin: 0;">
-
+<body>
     <header>
         <div class="headerTop">
             <div class="barraHeader">
@@ -65,58 +66,73 @@
             </div>
         </nav>
     </header>
-
     <main>
-        <a class="iconoWppFijo" href="https://wa.me/541132317858" target="_blank"><img
-                src="../assets/Imagenes/iconowpp.png" alt="Icono de wpp"></a>
-
-        <div class="textoPrincipalNosotros">
-            <h1>QUIENES SOMOS</h1>
+        <div class="textoPrincipalCotizacion">
+            <h1>COTIZACIÓN</h1>
         </div>
-        <a href="#nosotros" class="arrow">
+
+        <a href="#cotizacion" class="arrow">
             <img src="../assets/icons/flecha-hacia-abajo.png" alt="flecha hacia abajo">
         </a>
 
-        <div id="nosotros" class="textoQuienesSomos">
-            <h2>¿QUIENES SOMOS?</h2>
-            <p>Somos una empresa Argentina dedicada a dar soluciones a las necesidades del cliente en cuanto al area de
-                seguridad, ya sea para negocios, residencias, oficinas, etc. Brindamos soluciones personalizadas de
-                acuerdo
-                a cada cliente. Damos una garantia de 1 año a nuestras instalaciones y equipos ya que estamos
-                respaldados
-                por una serie de tecnicos capacitados y con experiencia de mas de 8 años. El Asesoramiento, Diseño,
-                Instalación, Mantenimiento y Monitoreo Remoto de Sistemas Integrales de Seguridad Electrónica es lo que
-                nos
-                destaca.Tenemos como misión desarrollar soluciones de sistemas de seguridad electrónica, trabajando en
-                equipo y con vocación de servicio en todas las etapas de cada proceso, con profundo respeto por el
-                cliente y
-                los empleados.</p>
+
+
+        <div id="cotizacion" class="tituloCotizacion">
+
+            <h1>Seleccione los datos correspondientes de acuerdo a sus necesidades</h1>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col d-flex justify-content-center mt-5"><img class="imgNosotros"
-                        src="../assets/Imagenes/fotoNosotros4.jpg" alt="camara instalada" /></div>
-                <div class="col d-flex justify-content-center mt-5"><img class="imgNosotros"
-                        src="../assets/Imagenes/fotoNosotros5.jpg" alt="camara instalada1" /></div>
-                <div class="col d-flex justify-content-center mt-5"><img class="imgNosotros"
-                        src="../assets/Imagenes/fotoNosotros6.jpg" alt="camara instalada2" /></div>
-                <div class="col d-flex justify-content-center mt-5"><img class="imgNosotros"
-                        src="../assets/Imagenes/fotoNosotros8.jpg" alt="camara instalada3" /></div>
-            </div>
-            <div class="row">
-                <div class="col d-flex justify-content-center mt-5"><img class="imgNosotros"
-                        src="../assets/Imagenes/fotoNosotros3.jpg" alt="camara instalada" /></div>
-                <div class="col d-flex justify-content-center mt-5"><img class="imgNosotros"
-                        src="../assets/Imagenes/fotoNosotros7.jpg" alt="camara instalada1" /></div>
-                <div class="col d-flex justify-content-center mt-5"><img class="imgNosotros"
-                        src="../assets/Imagenes/CAMARAS.jpg" alt="camara instalada2" /></div>
-                <div class="col d-flex justify-content-center mt-5 mb-5"><img class="imgNosotros"
-                        src="../assets/Imagenes/fotoNosotros2.jpg" alt="camara instalada3" /></div>
+        <form class="formularioCotizacion" action="">
+
+            <p>Seleccione la marca:</p>
+            <input type="radio" id="dahua" name="favMarca">
+            <label for="dahua">DAHUA</label><br>
+            <input type="radio" id="hik" name="favMarca">
+            <label for="hik">HIKVISION</label><br>
+            <br>
+            <hr>
+            <p>Seleccione la cantidad de cámaras:</p>
+
+            <input class="inputNumber" type="number"><br>
+            <hr>
+
+            <p>Seleccione la capacidad del disco de almacenamiento expresada en TB:</p>
+
+            <input type="radio" id="1tb" name="capacidad" value="1">
+            <label for="html">1</label><br>
+            <input type="radio" id="2tb" name="capacidad" value="2">
+            <label for="css">2</label><br>
+            <input type="radio" id="4tb" name="capacidad" value="3">
+            <label for="javascript">4</label><br>
+            <hr>
+
+            <input type="checkbox" id="manoDeObra">
+            <label for="manoDeObra">¿Desea incluir la mano de obra?</label><br>
+            <hr>
+
+            <p>Ingrese un mail</p>
+            <input class="inputMail" type="email" placeholder="Ej: xxx@gmail.com" name="clienteEmail"><br>
+            <hr>
+
+            <input class="botonCotizacion" type="button" value="COTIZAR">
+
+        </form>
+
+        <div class="respuesta" id="price">
+            <div class="confirmacion">
+
             </div>
         </div>
+
+        <div class="dolar" id="precioDolar"></div>
+
+
+
+
+
+
+
     </main>
-
     <footer>
         <div class="footer">
             <a href="https://www.instagram.com/seg.tec.soluciones/" target="_blank">
@@ -136,6 +152,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="../js/cotizador.js"></script>
+
 
 </body>
 
